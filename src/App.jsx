@@ -1,7 +1,8 @@
+import Clock from "./clock"
+
 function App() {
 
-  return 
-    //stuff
+  return <Clock />
   
 }
 
