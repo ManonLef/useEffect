@@ -5,13 +5,13 @@ export default function Clock() {
 
   useEffect(() => {
     const key = setInterval(() => {
-      setCounter(count => count + 1)
+      setCounter((count) => count + 1);
     }, 1000);
 
     return () => {
-      clearInterval(key)
-    }
-  }, [])
+      clearInterval(key);
+    };
+  }, []);
 
   return <p>{counter} seconds have passed</p>;
 }
